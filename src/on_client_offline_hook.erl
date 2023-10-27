@@ -3,4 +3,4 @@
 -include("vernemq_dev.hrl").
 
 %% called as an 'all'-hook, return value is ignored
--callback on_client_offline(SubscriberId  :: subscriber_id()) -> any().
+-callback on_client_offline(SubscriberId  :: subscriber_id(), Reason :: atom()) -> any().
