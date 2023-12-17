@@ -9,4 +9,4 @@
                      Topic         :: topic(),
                      Payload       :: payload(),
                      IsRetain      :: flag(),
-                     Label         :: binary()) -> any().
+                     MatchedAcl    :: {binary(), list(binary())}) -> any().

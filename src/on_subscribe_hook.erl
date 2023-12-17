@@ -6,5 +6,5 @@
 -callback on_subscribe(UserName      :: username(),
                        SubscriberId  :: subscriber_id(),
                        Topics        :: [{Topic :: topic(), QoS :: qos()}],
-                       Label         :: binary()) -> any().
+                       MatchedAcl    :: {binary(), list(binary())}) -> any().
 
