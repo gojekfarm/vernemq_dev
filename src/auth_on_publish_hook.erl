@@ -32,7 +32,10 @@
         %% Throttle the publisher for a number of
         %% milliseconds. Note, there is no
         %% back-pressure for websocket connections.
-      | {throttle, milliseconds()}.
+      | {throttle, milliseconds()}
+
+        % Matched ACL.
+      | {matched_acl, matched_acl()}.
 
 
 -export_type([msg_modifier/0]).
