@@ -8,4 +8,5 @@
                                QoS           :: qos(),
                                Topic         :: topic(),
                                Payload       :: payload(),
-                               IsRetain      :: flag()) -> any().
+                               IsRetain      :: flag(),
+                               MatchedAcl    :: matched_acl()) -> any().

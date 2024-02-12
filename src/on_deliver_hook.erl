@@ -7,7 +7,8 @@
                      QoS           :: qos(),
                      Topic         :: topic(),
                      Payload       :: payload(),
-                     IsRetain      :: flag()) -> ok
+                     IsRetain      :: flag(),
+                     MatchedAcl    :: matched_acl()) -> ok
                                                  | {ok, Payload    :: payload()}
                                                  | {ok, Modifiers  :: [msg_modifier()]}
                                                  | next.
