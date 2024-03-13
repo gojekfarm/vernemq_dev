@@ -8,7 +8,8 @@
                      Topic         :: topic(),
                      Payload       :: payload(),
                      IsRetain      :: flag(),
-                     MatchedAcl    :: matched_acl()) -> ok
+                     MatchedAcl    :: matched_acl(),
+                     Persisted     :: flag()) -> ok
                                                  | {ok, Payload    :: payload()}
                                                  | {ok, Modifiers  :: [msg_modifier()]}
                                                  | next.
