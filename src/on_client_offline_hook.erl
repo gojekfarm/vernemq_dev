@@ -6,6 +6,5 @@
 %% called as an 'all'-hook, return value is ignored
 -callback on_client_offline(SubscriberId :: subscriber_id(),
                             Reason :: atom(),
-                            Username :: username(),
-                            SessionId :: session_id()) ->
+                            Username :: username()) ->
                               any().

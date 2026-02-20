@@ -7,8 +7,7 @@
                            SubscriberId  :: subscriber_id(),
                            UserName      :: username(),
                            Password      :: password(),
-                           CleanSession  :: flag(),
-                           SessionId    :: session_id()) -> ok
+                           CleanSession  :: flag()) -> ok
                                                            | {ok, [reg_modifiers()]}
                                                            | {error, invalid_credentials | any()}
                                                            | next.
