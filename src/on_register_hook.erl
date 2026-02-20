@@ -6,5 +6,4 @@
 -callback on_register(Peer              :: peer(),
                       SubscriberId      :: subscriber_id(),
                       UserName          :: username(),
-                      UserProperties    :: properties(),
-                      SessionId         :: session_id()) -> any().
+                      UserProperties    :: properties()) -> any().

@@ -10,6 +10,4 @@
                                Payload       :: payload(),
                                IsRetain      :: flag(),
                                MatchedAcl    :: matched_acl(),
-                               Persisted     :: flag(),
-                               SessionId     :: session_id()
-                            ) -> any().
+                               Persisted     :: flag()) -> any().

@@ -3,7 +3,6 @@
 -include("vernemq_dev.hrl").
 
 %% called as an 'all'-hook, return value is ignored
--callback on_client_wakeup(SubscriberId  :: subscriber_id(),
-                           SessionId     :: session_id()) -> any().
+-callback on_client_wakeup(SubscriberId  :: subscriber_id()) -> any().
 
 

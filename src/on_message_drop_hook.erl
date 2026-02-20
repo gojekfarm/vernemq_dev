@@ -7,5 +7,4 @@
                           Promise       :: fun(() -> {topic(), qos(), payload(), map(), matched_acl()} | error),
                           Reason        :: expired
                                          | queue_full
-                                         | max_packet_size_exceeded,
-                          SessionId     :: session_id()) -> any().
+                                         | max_packet_size_exceeded) -> any().
