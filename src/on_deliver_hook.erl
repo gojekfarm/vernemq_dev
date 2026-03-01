@@ -9,7 +9,8 @@
                      Payload       :: payload(),
                      IsRetain      :: flag(),
                      MatchedAcl    :: matched_acl(),
-                     Persisted     :: flag()) -> ok
+                     Persisted     :: flag(),
+                     SessionId     :: session_id()) -> ok
                                                  | {ok, Payload    :: payload()}
                                                  | {ok, Modifiers  :: [msg_modifier()]}
                                                  | next.

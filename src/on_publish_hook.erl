@@ -9,4 +9,5 @@
                      Topic         :: topic(),
                      Payload       :: payload(),
                      IsRetain      :: flag(),
-                     MatchedAcl    :: matched_acl()) -> any().
+                     MatchedAcl    :: matched_acl(),
+                     SessionId     :: session_id()) -> any().
