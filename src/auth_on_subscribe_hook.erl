@@ -5,7 +5,8 @@
 %% called as an all_till_ok - hook
 -callback auth_on_subscribe(UserName      :: username(),
                             SubscriberId  :: subscriber_id(),
-                            Topics        :: [{Topic :: topic(), QoS :: qos()}]) ->
+                            Topics        :: [{Topic :: topic(), QoS :: qos()}],
+                            SessionId     :: session_id()) ->
     ok |
     {ok, sub_modifiers()} |
     {error, Reason :: any()} |

@@ -23,6 +23,7 @@
 'on_session_expired' | 'on_offline_message' | 'on_config_change' | 'on_client_wakeup' | 'on_client_offline' | 'on_client_gone' | 'on_delivery_complete'
 | 'on_register_failed'.
 -type matched_acl() :: {matched_acl, Name :: binary() | undefined, Pattern :: binary() | undefined}.
+-type session_id()          :: binary().
 
 %% reason codes names
 -define(SUCCESS,                        success).

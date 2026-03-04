@@ -7,4 +7,5 @@
                              QoS           :: qos(),
                              Topic         :: topic(),
                              Payload       :: payload(),
-                             IsRetain      :: flag()) -> any().
+                             IsRetain      :: flag(),
+                             SessionId     :: session_id()) -> any().

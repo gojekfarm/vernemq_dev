@@ -4,7 +4,8 @@
 
 %% called as an 'all'-hook, return value is ignored
 -callback on_topic_unsubscribed(SubscriberId    :: subscriber_id(),
-                                MaybeTopics     :: maybe_topics()) -> any().
+                                MaybeTopics     :: maybe_topics(),
+                                SessionId       :: session_id()) -> any().
 
 -type maybe_topics() ::
     all_topics

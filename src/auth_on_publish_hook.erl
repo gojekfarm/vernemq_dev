@@ -6,7 +6,8 @@
                           QoS           :: qos(),
                           Topic         :: topic(),
                           Payload       :: payload(),
-                          IsRetain      :: flag()) -> ok
+                          IsRetain      :: flag(),
+                          SessionId     :: session_id()) -> ok
                                                       | {ok, Payload    :: payload()}
                                                       | {ok, Modifiers  :: [msg_modifier()]}
                                                       | {error, Reason  :: any()}
