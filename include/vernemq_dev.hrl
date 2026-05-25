@@ -71,6 +71,7 @@
 -define(MAX_CONNECT_TIME,               max_connect_time).
 -define(SUBSCRIPTION_IDS_NOT_SUPPORTED, subscription_ids_not_supported).
 -define(WILDCARD_SUBS_NOT_SUPPORTED,    wildcard_subs_not_supported).
+-define(USER_OFFLINE,                   user_offline).
 
 %% properties
 
@@ -145,6 +146,7 @@
                           | ?CONNECTION_RATE_EXCEEDED
                           | ?MAX_CONNECT_TIME
                           | ?SUBSCRIPTION_IDS_NOT_SUPPORTED
-                          | ?WILDCARD_SUBS_NOT_SUPPORTED.
+                          | ?WILDCARD_SUBS_NOT_SUPPORTED
+                          | ?USER_OFFLINE.
 
 -endif.
