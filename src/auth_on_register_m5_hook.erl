@@ -9,7 +9,8 @@
                               UserName      :: username(),
                               Password      :: password(),
                               CleanStart    :: flag(),
-                              Properties    :: reg_properties()) ->
+                              Properties    :: reg_properties(),
+                              SessionId       :: session_id()) ->
     ok |
     {ok, reg_modifiers()} |
     {error, #{reason_code => err_reason_code_name()}} |

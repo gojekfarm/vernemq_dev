@@ -6,4 +6,5 @@
 -callback on_subscribe_m5(UserName      :: username(),
                           SubscriberId  :: subscriber_id(),
                           Topics        :: [{Topic :: topic(), SubInfo :: subinfo()}],
-                          Props         :: properties()) -> any().
+                          Props         :: properties(),
+                          SessionId     :: session_id()) -> any().

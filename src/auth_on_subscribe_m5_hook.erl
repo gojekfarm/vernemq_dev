@@ -6,7 +6,8 @@
 -callback auth_on_subscribe_m5(UserName      :: username(),
                                SubscriberId  :: subscriber_id(),
                                Topics        :: [{Topic :: topic(), SubInfo :: subinfo()}],
-                               Properties    :: sub_properties()) ->
+                               Properties    :: sub_properties(),
+                               SessionId     :: session_id()) ->
     ok |
     {ok, sub_modifiers()} |
     {error, Reason :: any()} |

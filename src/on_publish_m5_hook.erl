@@ -9,4 +9,5 @@
                         Topic         :: topic(),
                         Payload       :: payload(),
                         IsRetain      :: flag(),
-                        Properties    :: properties()) -> any().
+                        Properties    :: properties(),
+                        SessionId     :: session_id()) -> any().
