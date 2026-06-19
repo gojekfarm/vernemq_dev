@@ -10,7 +10,9 @@
                         IsRetain      :: flag(),
                         Properties    :: deliver_properties(),
                         SessionId     :: session_id(),
-                        MatchedAcl    :: matched_acl()) ->
+                        MatchedAcl    :: matched_acl(),
+                        Persisted     :: flag()
+                      ) ->
     ok |
     {ok, Modifiers  :: msg_modifier()} |
     next.
