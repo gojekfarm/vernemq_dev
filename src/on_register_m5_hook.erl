@@ -6,4 +6,5 @@
 -callback on_register_m5(Peer          :: peer(),
                          SubscriberId  :: subscriber_id(),
                          UserName      :: username(),
-                         Properties    :: properties()) -> any().
+                         Properties    :: properties(),
+                         SessionId     :: session_id()) -> any().

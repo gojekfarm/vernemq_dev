@@ -7,7 +7,8 @@
                              Topic         :: topic(),
                              Payload       :: payload(),
                              IsRetain      :: flag(),
-                             Properties    :: pub_properties()) ->
+                             Properties    :: pub_properties(),
+                             SessionId       :: session_id()) ->
     ok |
     {ok, Payload    :: payload()} |
     {ok, Modifiers  :: msg_modifier()} |

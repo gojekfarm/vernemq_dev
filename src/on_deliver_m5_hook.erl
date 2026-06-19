@@ -8,7 +8,8 @@
                         Topic         :: topic(),
                         Payload       :: payload(),
                         IsRetain      :: flag(),
-                        Properties    :: deliver_properties()) ->
+                        Properties    :: deliver_properties(),
+                        SessionId     :: session_id()) ->
     ok |
     {ok, Modifiers  :: msg_modifier()} |
     next.

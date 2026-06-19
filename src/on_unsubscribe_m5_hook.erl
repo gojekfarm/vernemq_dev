@@ -6,7 +6,8 @@
 -callback on_unsubscribe_m5(UserName      :: username(),
                             SubscriberId  :: subscriber_id(),
                             Topics        :: [Topic :: topic()],
-                            Properties    :: unsub_properties()) ->
+                            Properties    :: unsub_properties(),
+                            SessionId     :: session_id()) ->
     ok |
     {ok, unsub_modifiers()} |
     next.

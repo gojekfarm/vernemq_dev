@@ -5,7 +5,8 @@
 %% called as an all_till_ok hook
 -callback on_auth_m5(UserName :: username(),
                      SubscriberId :: subscriber_id(),
-                     Properties :: auth_properties()) ->
+                     Properties :: auth_properties(),
+                     SessionId :: session_id()) ->
     {ok, auth_modifiers()} |
     {error, err_values()} |
     {error, any()} | %% does not send a reply to the client!
