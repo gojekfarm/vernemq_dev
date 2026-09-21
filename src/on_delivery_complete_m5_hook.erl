@@ -2,7 +2,7 @@
 -include("vernemq_dev_int.hrl").
 
 %% called as an 'all'-hook, return value is ignored
--callback on_delivery_complete(UserName      :: username(),
+-callback on_delivery_complete_m5(UserName      :: username(),
                                SubscriberId  :: subscriber_id(),
                                QoS           :: qos(),
                                Topic         :: topic(),
