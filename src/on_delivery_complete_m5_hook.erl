@@ -2,17 +2,17 @@
 -include("vernemq_dev_int.hrl").
 
 %% called as an 'all'-hook, return value is ignored
--callback on_delivery_complete(UserName      :: username(),
-                               SubscriberId  :: subscriber_id(),
-                               QoS           :: qos(),
-                               Topic         :: topic(),
-                               Payload       :: payload(),
-                               IsRetain      :: flag(),
-                               MatchedAcl    :: matched_acl(),
-                               Persisted     :: flag(),
-                               SessionId     :: session_id(),
-                               Properties    :: deliver_properties()
-                            ) -> any().
+-callback on_delivery_complete_m5(UserName      :: username(),
+                                  SubscriberId  :: subscriber_id(),
+                                  QoS           :: qos(),
+                                  Topic         :: topic(),
+                                  Payload       :: payload(),
+                                  IsRetain      :: flag(),
+                                  MatchedAcl    :: matched_acl(),
+                                  Persisted     :: flag(),
+                                  SessionId     :: session_id(),
+                                  Properties    :: deliver_properties()
+                                ) -> any().
 
 -type deliver_properties() ::
         #{
